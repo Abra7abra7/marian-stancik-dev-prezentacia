@@ -546,7 +546,6 @@ class: text-center
   <div class="relative z-10">
     <div class="text-4xl font-bold mb-4">Book a Strategy Call</div>
     <p class="text-brand-muted mb-8 text-xl">Let's discuss how AI can automate your success.</p>
-    
     <div class="inline-flex flex-col items-center">
       <div class="mb-2 px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-xs font-bold border border-red-500/30 animate-pulse">
         Only 3 spots left for March
