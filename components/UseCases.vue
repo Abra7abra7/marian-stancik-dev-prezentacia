@@ -3,20 +3,23 @@ const props = defineProps({
   mainTitle: { default: 'Use Cases' },
   mainSubtitle: { default: 'Real World Applications' },
   
-  case1Title: { default: 'Logistika' },
-  case1Problem: { default: 'Tovar stojí, kamióny meškajú.' },
-  case1Solution: { default: 'Autonómny Dispečer' },
-  case1Result: { default: '-20% náklady na palivo' },
+  case1Icon: { default: 'i-carbon-chart-multitype' },
+  case1Title: { default: 'Market Researcher' },
+  case1Problem: { default: 'Nestíhame sledovať konkurenciu.' },
+  case1Solution: { default: 'Hierarchický systém agentov' },
+  case1Result: { default: '95% úspora času' },
 
-  case2Title: { default: 'Administratíva' },
-  case2Problem: { default: 'Manuálne prepisovanie faktúr.' },
-  case2Solution: { default: 'Dokumentový Analytik' },
-  case2Result: { default: '0 chýb / 40h ušetrených' },
+  case2Icon: { default: 'i-carbon-network-4' },
+  case2Title: { default: 'Supply Chain' },
+  case2Problem: { default: 'Pomalé vyjednávanie s dodávateľmi.' },
+  case2Solution: { default: 'A2A Autonómne Vyjednávanie' },
+  case2Result: { default: 'Miliónové úspory' },
 
-  case3Title: { default: 'Výroba' },
-  case3Problem: { default: 'Nečakané odstávky strojov.' },
-  case3Solution: { default: 'Prediktívna Údržba' },
-  case3Result: { default: '99.9% dostupnosť' }
+  case3Icon: { default: 'i-carbon-security' },
+  case3Title: { default: 'Compliance Auditor' },
+  case3Problem: { default: 'Riziko pokút (EU AI Act).' },
+  case3Solution: { default: 'Automatický Monitoring' },
+  case3Result: { default: 'Zero Pokuty (35M €)' }
 })
 </script>
 
@@ -33,10 +36,10 @@ const props = defineProps({
 
       <div class="grid grid-cols-3 gap-8 max-w-6xl mx-auto w-full">
         
-        <!-- Case 1: Logistics -->
+        <!-- Case 1 -->
         <div class="glass-card p-8 rounded-2xl hover:bg-white/5 transition duration-300 border border-white/10 group">
           <div class="w-14 h-14 rounded-full bg-blue-500/20 flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition duration-300">
-            <div class="i-carbon-delivery-truck text-3xl"></div>
+            <div :class="[case1Icon, 'text-3xl']"></div>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-white">{{ case1Title }}</h3>
           
@@ -55,10 +58,10 @@ const props = defineProps({
           </div>
         </div>
 
-        <!-- Case 2: Admin -->
+        <!-- Case 2 -->
         <div class="glass-card p-8 rounded-2xl hover:bg-white/5 transition duration-300 border border-white/10 group">
           <div class="w-14 h-14 rounded-full bg-purple-500/20 flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition duration-300">
-            <div class="i-carbon-document-tasks text-3xl"></div>
+             <div :class="[case2Icon, 'text-3xl']"></div>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-white">{{ case2Title }}</h3>
           
@@ -77,10 +80,10 @@ const props = defineProps({
           </div>
         </div>
 
-        <!-- Case 3: Manufacturing -->
+        <!-- Case 3 -->
         <div class="glass-card p-8 rounded-2xl hover:bg-white/5 transition duration-300 border border-white/10 group">
           <div class="w-14 h-14 rounded-full bg-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400 group-hover:scale-110 transition duration-300">
-             <div class="i-carbon-assembly-cluster text-3xl"></div>
+             <div :class="[case3Icon, 'text-3xl']"></div>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-white">{{ case3Title }}</h3>
           

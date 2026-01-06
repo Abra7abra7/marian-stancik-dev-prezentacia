@@ -1,6 +1,6 @@
 ---
 theme: default
-background: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop
+
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -16,7 +16,7 @@ transition: slide-left
 <!-- Slide 1: Hero Section -->
 
 <LanguageSwitcher current="sk" />
-<HeroSection title="INDUSTRIAL AI" subtitle="2026" keyword1="AUTONÓMIA" keyword2="EFEKTIVITA" keyword3="ŠKÁLOVANIE" />
+<HeroSection title="AGENTOVÁ ÉRA" subtitle="Vytváranie a riadenie autonómnych systémov" keyword1="AUTONÓMIA" keyword2="EFEKTIVITA" keyword3="ŠKÁLOVANIE" />
 
 ---
 layout: default
@@ -34,7 +34,25 @@ background: https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=
 
 <!-- Slide 3: Use Cases -->
 
-<UseCases mainTitle="3 Praktické Príklady" mainSubtitle="Kde AI prináša okamžitú hodnotu" case1Title="Logistika" case1Problem="Tovar stojí, kamióny meškajú." case1Solution="Autonómny Dispečer" case1Result="-20% náklady na palivo" case2Title="Administratíva" case2Problem="Manuálne prepisovanie faktúr." case2Solution="Dokumentový Analytik" case2Result="0 chýb / 40h ušetrených" case3Title="Výroba" case3Problem="Nečakané odstávky strojov." case3Solution="Prediktívna Údržba" case3Result="99.9% dostupnosť" />
+<UseCases 
+  mainTitle="3 Praktické Príklady" 
+  mainSubtitle="Kde AI prináša okamžitú hodnotu" 
+  case1Icon="i-carbon-chart-multitype"
+  case1Title="Market Researcher" 
+  case1Problem="Analýza 50+ konkurentov ručne." 
+  case1Solution="Hierarchický monitoring" 
+  case1Result="95% úspora času" 
+  case2Icon="i-carbon-network-4"
+  case2Title="Supply Chain" 
+  case2Problem="Pomalé vyjednávanie s dodávateľmi." 
+  case2Solution="A2A Autonómne Vyjednávanie" 
+  case2Result="Miliónové úspory" 
+  case3Icon="i-carbon-security"
+  case3Title="Compliance Auditor" 
+  case3Problem="EU AI Act & Kontrola." 
+  case3Solution="Automatický Audit" 
+  case3Result="Zero pokuty (35M €)" 
+/>
 
 ---
 layout: default

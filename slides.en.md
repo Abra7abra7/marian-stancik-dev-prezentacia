@@ -1,6 +1,6 @@
 ---
 theme: default
-background: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop
+
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -16,7 +16,7 @@ transition: slide-left
 <!-- Slide 1: Hero Section -->
 
 <LanguageSwitcher current="en" />
-<HeroSection title="INDUSTRIAL AI" subtitle="2026" keyword1="AUTONOMY" keyword2="EFFICIENCY" keyword3="SCALE" />
+<HeroSection title="THE AGENTIC ERA" subtitle="Building and Managing Autonomous Systems" keyword1="AUTONOMY" keyword2="EFFICIENCY" keyword3="SCALE" />
 
 ---
 layout: default
@@ -34,7 +34,25 @@ background: https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=
 
 <!-- Slide 3: Use Cases -->
 
-<UseCases mainTitle="3 Practical Use Cases" mainSubtitle="Immediate Business Value" case1Title="Logistics" case1Problem="Delayed shipments & inventory." case1Solution="Autonomous Dispatcher" case1Result="-20% fuel costs" case2Title="Admin" case2Problem="Manual invoice data entry." case2Solution="Document Analyst" case2Result="0 errors / 40h saved" case3Title="Manufacturing" case3Problem="Unexpected machine downtime." case3Solution="Predictive Maintenance" case3Result="99.9% uptime" />
+<UseCases 
+  mainTitle="3 Key Business Cases" 
+  mainSubtitle="Immediate ROI & Impact" 
+  case1Icon="i-carbon-chart-multitype"
+  case1Title="Market Researcher" 
+  case1Problem="Manual analysis of 50+ competitors." 
+  case1Solution="Hierarchical Monitoring" 
+  case1Result="95% time saved" 
+  case2Icon="i-carbon-network-4"
+  case2Title="Supply Chain" 
+  case2Problem="Slow supplier negotiations." 
+  case2Solution="A2A Autonomous Negotiation" 
+  case2Result="Millions in savings" 
+  case3Icon="i-carbon-security"
+  case3Title="Compliance Auditor" 
+  case3Problem="EU AI Act & Monitoring." 
+  case3Solution="Automated Audit" 
+  case3Result="Zero fines (35M €)" 
+/>
 
 ---
 layout: default

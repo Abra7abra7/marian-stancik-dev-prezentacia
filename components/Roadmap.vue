@@ -61,13 +61,22 @@ const props = defineProps({
         </div>
       </div>
 
-      <div v-motion
+      <div class="flex flex-col items-center gap-6" v-motion
       :initial="{ opacity: 0, y: 30 }"
       :enter="{ opacity: 1, y: 0, transition: { delay: 400, duration: 600 } }">
-        <button class="px-12 py-5 rounded-full bg-gradient-to-r from-brand-primary to-brand-indigo text-white font-bold text-xl hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.5)] transition duration-300">
-          {{ ctaButton }}
-        </button>
-        <div class="mt-4 text-sm text-slate-500 font-mono">
+        
+        <div class="flex items-center gap-8">
+            <button class="px-12 py-5 rounded-full bg-gradient-to-r from-brand-primary to-brand-indigo text-white font-bold text-xl hover:scale-105 hover:shadow-[0_0_40px_rgba(99,102,241,0.5)] transition duration-300">
+            {{ ctaButton }}
+            </button>
+
+            <!-- QR Code -->
+            <div class="bg-white/10 p-2 rounded-xl backdrop-blur-sm border border-white/20">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://marianstancik.dev&color=ffffff&bgcolor=1e293b" alt="QR Code" class="w-20 h-20 rounded-lg opacity-90 hover:opacity-100 transition" />
+            </div>
+        </div>
+
+        <div class="mt-2 text-sm text-slate-500 font-mono">
           {{ ctaSubtext }}
         </div>
       </div>
