@@ -1,5 +1,5 @@
 {
-  "name": "marian-ai-portfolio",
+  "name": "marian-stancik-dev-prezentacia",
   "private": true,
   "scripts": {
     "dev": "slidev --open",
